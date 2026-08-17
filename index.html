@@ -1,1 +1,382 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>London Ambulance Service | Community</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7f8;
+            color: #1d1d1f;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            height: 72px;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #005eb8;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #005eb8;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 8%;
+            background:
+                linear-gradient(
+                    rgba(0, 60, 120, 0.88),
+                    rgba(0, 94, 184, 0.82)
+                ),
+                url("https://images.unsplash.com/photo-1587745416684-47953f16f02f?auto=format&fit=crop&w=1800&q=80")
+                center/cover;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 76px);
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-bottom: 32px;
+            opacity: 0.95;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.25s;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #005eb8;
+        }
+
+        .btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 90px 8%;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #003f7d;
+        }
+
+        .section-text {
+            color: #626262;
+            line-height: 1.7;
+            max-width: 750px;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 24px;
+            margin-top: 45px;
+        }
+
+        .card {
+            background: white;
+            padding: 32px;
+            border-radius: 15px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card h3 {
+            color: #005eb8;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* JOIN SECTION */
+
+        .join {
+            background: #005eb8;
+            color: white;
+            text-align: center;
+        }
+
+        .join h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .join p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #08233c;
+            color: #dbe5ee;
+            padding: 35px 8%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        @media(max-width: 720px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            section {
+                padding: 70px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            LAS COMMUNITY
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Operations</a>
+            <a href="#careers">Careers</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <header class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                London Ambulance Service
+            </h1>
+
+            <p>
+                Providing professional emergency medical roleplay,
+                training and operational experiences within our
+                London Ambulance Service community.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#about" class="btn btn-primary">
+                    Explore LAS
+                </a>
+
+                <a href="#" class="btn btn-secondary">
+                    Join Discord
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <section id="about">
+
+        <h2 class="section-title">
+            About Our Service
+        </h2>
+
+        <p class="section-text">
+            Our London Ambulance Service community aims to provide
+            an engaging and professional emergency medical roleplay
+            experience. Members can develop their knowledge, attend
+            training and take part in realistic ambulance operations.
+        </p>
+
+    </section>
+
+
+    <section id="services">
+
+        <h2 class="section-title">
+            Our Operations
+        </h2>
+
+        <p class="section-text">
+            Explore some of the areas available within our service.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🚑 Ambulance Operations</h3>
+
+                <p>
+                    Respond to emergency calls and provide
+                    pre-hospital care across London.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>📚 Training</h3>
+
+                <p>
+                    Take part in structured training designed to
+                    develop operational and clinical knowledge.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>⚕ Specialist Units</h3>
+
+                <p>
+                    Progress into specialist and advanced roles
+                    across the service.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>👥 Community</h3>
+
+                <p>
+                    Join a growing Discord community centred around
+                    professional and enjoyable roleplay.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="join" id="careers">
+
+        <h2>
+            Start Your Career
+        </h2>
+
+        <p>
+            Whether you're new to ambulance roleplay or already
+            experienced, there are opportunities to develop,
+            progress and become part of our team.
+        </p>
+
+        <a href="#" class="btn btn-primary">
+            Apply Now
+        </a>
+
+    </section>
+
+
+    <footer id="contact">
+
+        <div>
+            <strong>London Ambulance Service Community</strong>
+            <br><br>
+            Emergency Medical Roleplay
+        </div>
+
+        <div>
+            Not affiliated with the real London Ambulance Service NHS Trust.
+        </div>
+
+    </footer>
+
+</body>
+</html>
